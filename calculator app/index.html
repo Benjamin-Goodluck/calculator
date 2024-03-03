@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator App</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body >
+
+   
+<div class="calculator">
+    <div class="tabs">
+        
+        <button class="tablinks" onclick="openTab(event, 'home')"><i class="fa-solid fa-calculator"></i></button>
+        <button class="tablinks" onclick="openTab(event, 'history')"><i class="fas fa-history"></i></button>
+        
+
+    </div>
+
+   
+
+
+    <div id="home" class="tabcontent">
+        
+        <!-- Your calculator content goes here -->
+        <input type="text" class="display" readonly>
+        <div class="buttons normal-calculator">
+            <!-- Normal calculator buttons go here -->
+            <!-- Example: -->
+<!-- Numbers 0-9 -->
+<button onclick="pi()">π</button>
+<!-- Trigonometric functions -->
+<button onclick="sine()">sin</button>
+<button onclick="cosine()">cos</button>
+<button onclick="tangent()">tan</button>
+<button onclick="inverseSine()">sin⁻¹</button>
+<button onclick="inverseCosine()">cos⁻¹</button>
+<button onclick="inverseTangent()">tan⁻¹</button>
+<!-- Logarithmic functions -->
+<button onclick="logarithm()">log</button>
+<button onclick="naturalLogarithm()">ln</button>
+<!-- Exponential functions -->
+<button onclick="exponential()">e^x</button>
+<button onclick="tenToThePowerOf()">10^x</button>
+<!-- Memory functions -->
+<button onclick="memoryStore()">M+</button>
+<button onclick="memoryRecall()">MR</button>
+<button onclick="memoryClear()">MC</button>
+<button onclick="addToDisplay('(')">(</button>
+<button onclick="addToDisplay(')')">)</button>
+<!-- Exponent (^) -->
+<button onclick="addToDisplay('^')">^</button>
+<!-- Square root (√) -->
+<button onclick="squareRoot()">√</button>
+<!-- Reciprocal (1/x) -->
+<button onclick="reciprocal()">1/x</button>
+<!-- Percentage (%) -->
+<button onclick="percentage()">%</button>
+<!-- Pi (π) -->
+<!-- Clear functions -->
+<button onclick="clearEntry()">CE</button>
+<button onclick="clearDisplay()">C</button>
+<button onclick="changeSign()">+/-</button>
+<button onclick="backspace()">⌫</button>
+<button onclick="addToDisplay('1')">1</button>
+<button onclick="addToDisplay('2')">2</button>
+<button onclick="addToDisplay('3')">3</button>
+<button onclick="addToDisplay('4')">4</button>
+<button onclick="addToDisplay('5')">5</button>
+<button onclick="addToDisplay('6')">6</button>
+<button onclick="addToDisplay('7')">7</button>
+<button onclick="addToDisplay('8')">8</button>
+<button onclick="addToDisplay('9')">9</button>
+<button onclick="addToDisplay('0')">0</button>
+
+<!-- Decimal point (.) -->
+<button onclick="addToDisplay('.')">.</button>
+<!-- Basic arithmetic operations -->
+<button onclick="addToDisplay('+')">+</button>
+<button onclick="addToDisplay('-')">-</button>
+<button onclick="addToDisplay('*')">×</button>
+<button onclick="addToDisplay('/')">÷</button>
+<!-- Equals (=) -->
+<button onclick="calculate()">=</button>
+<!-- Parentheses ( ) -->
+
+
+
+        </div>
+    </div>
+
+    <div id="history" class="tabcontent" style="color: white; font-family: sans-serif;">
+        <h2 style="font-family: sans-serif; color: white;">History</h2>
+        <ul class="history-list">
+            <!-- Example history entry with date -->
+            <li style="font-family: sans-serif; ">
+                <span class="history-date">2024-03-05</span>
+                <span class="history-calculation">Calculation 1: 5 + 7 = 12</span>
+            </li>
+            <!-- Add more history items as needed -->
+        </ul>
+    </div>
+</div>
+
+<div class="download-button" style="color: black;">
+    <div class="text-container">
+        <h1 class="animated-text">Click the Button to Get to know how the Features of the Calculator</h1>
+      </div>
+    <a href="Scientific Calculator Manual.zip" id="downloadNotes" download="notes.zip">Download Notes</a>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

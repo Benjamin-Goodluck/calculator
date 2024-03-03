@@ -1,0 +1,229 @@
+/* Styles for tabs */
+body {
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease; /* Smooth transition effect */
+}
+
+.tabcontent {
+    display: none;
+}
+
+/* Button styles */
+.tablinks {
+    background-color: #4CAF50; /* Green background color */
+    border: none;
+    color: #fff; /* White text color */
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.tablinks:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Display styles */
+.display {
+    font-size: 40px;
+    background-color: #fff; /* White background color */
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Default styles */
+
+/* Styles for calculator container */
+.calculator {
+    width: 100%;
+    max-width: 500px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent white background */
+    border: 1px solid #fff; /* White border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+}
+
+/* Styles for tabs */
+.tabs {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text-container {
+    text-align: center;
+  }
+  
+  .animated-text {
+    font: 1em sans-serif;
+    color: #fff;
+    font-size: 36px;
+    animation: animateText 2s infinite alternate;
+  }
+  
+  @keyframes animateText {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+  
+
+.tablinks {
+    background-color: #ddd;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.tablinks:hover {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    display: none;
+}
+
+/* Styles for display */
+.display {
+    font-size: 40px;
+    background-color: #fff;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: calc(100% - 40px);
+}
+
+/* Styles for buttons */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    font-size: 20px;
+    padding: 15px;
+    background-color: #f2f2f7;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #dcdce1;
+}
+
+/* Responsive styles */
+
+/* Adjust layout for smaller screens */
+@media screen and (max-width: 768px) {
+    .calculator {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .buttons {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Adjust font size for smaller screens */
+    .display {
+        font-size: 32px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+/* Animation for fade in */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .calculator {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+
+  .intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Button styles */
+.download-button {
+    text-align: center;
+}
+
+.download-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent white background */
+    border: 1px solid #fff; /* White border */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: sans-serif;
+}
+
+.download-button a:hover {
+    background-color: #0056b3;
+}
+
+
+.intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.calculator-container {
+    position: relative;
+    z-index: 1;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Ensure the background is below the calculator container */
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease;
+}
+
+
+
+  
+
